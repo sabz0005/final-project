@@ -44,9 +44,7 @@ p {
 }
 
 
-/* ==========================================================================
-   2. Buttons
-   ========================================================================== */
+
 
 .btn {
   display: inline-flex;
@@ -91,10 +89,6 @@ p {
 }
 
 
-/* ==========================================================================
-   3. Site Header (logo + nav + search)
-   Mobile: stacked vertically. Desktop: horizontal row.
-   ========================================================================== */
 
 .site-header {
   background-color: #222;
@@ -191,10 +185,7 @@ p {
 }
 
 
-/* ==========================================================================
-   4. Hero section
-   Full-bleed background image with dark overlay and left-aligned copy.
-   ========================================================================== */
+
 
 .hero-section {
   position: relative;
@@ -242,9 +233,7 @@ p {
 }
 
 
-/* ==========================================================================
-   5. Section heading (shared)
-   ========================================================================== */
+
 
 .section-heading {
   font-size: 1.75rem;
@@ -254,10 +243,7 @@ p {
 }
 
 
-/* ==========================================================================
-   6. About Us
-   Cream background, image + text. Stacked on mobile, side-by-side on desktop.
-   ========================================================================== */
+
 
 .about-section {
   background-color: #ffe6ac;
@@ -286,10 +272,7 @@ p {
 }
 
 
-/* ==========================================================================
-   7. Our Services
-   CSS Grid. 1 col mobile → 2/3 col desktop.
-   ========================================================================== */
+
 
 .services-section {
   background-color: #fff;
@@ -334,10 +317,7 @@ p {
 }
 
 
-/* ==========================================================================
-   8. Our Vision
-   Dark overlay on a background image. Left-aligned content.
-   ========================================================================== */
+
 
 .vision-section {
   position: relative;
@@ -382,11 +362,6 @@ p {
 }
 
 
-/* ==========================================================================
-   9. Our Team
-   Stacked team cards on mobile. On desktop, John = image | text,
-   Bob = text | image (alternating).
-   ========================================================================== */
 
 .team-section {
   background-color: #fff;
@@ -438,10 +413,6 @@ p {
 }
 
 
-/* ==========================================================================
-   10. Contact Us
-   Form, hours table and location map.
-   ========================================================================== */
 
 .contact-section {
   background-color: #fff;
@@ -534,14 +505,11 @@ p {
 .map-embed iframe {
   width: 100%;
   height: 280px;
-  border: 0;    /* replaces the previous inline style */
+  border: 0;   
   display: block;
 }
 
 
-/* ==========================================================================
-   11. Footer
-   ========================================================================== */
 
 .site-footer {
   background-color: #222;
@@ -570,14 +538,11 @@ p {
 }
 
 
-/* ==========================================================================
-   12. Desktop styles
-   Activated at 760px and above (per assignment requirement).
-   ========================================================================== */
+
 
 @media (min-width: 760px) {
 
-  /* ---------------- Header: logo | nav | search in a single row ---------- */
+  /*  Header: logo | nav | search in a single row  */
   .header-inner {
     flex-direction: row;
     align-items: stretch;
@@ -616,7 +581,7 @@ p {
     width: 220px;
   }
 
-  /* ---------------- Hero ---------------- */
+  /* Hero  */
   .hero-section {
     min-height: 520px;
     padding-top: 3rem;
@@ -638,7 +603,7 @@ p {
     font-size: 1.05rem;
   }
 
-  /* ---------------- About: image | text (Flexbox) ---------------- */
+  /*  About: image | text (Flexbox)  */
   .about-container {
     flex-direction: row;
     align-items: stretch;
@@ -662,10 +627,7 @@ p {
     flex-direction: column;
   }
 
-  /* ---------------- Services: 6-col CSS Grid ----------------
-     Large cards span 3/6 (=1/2), small cards span 2/6 (=1/3).
-     Row 1: two large cards (Digital + Marketing).
-     Row 2: three small cards (Video, Web, Print).
+  /* Services
   */
   .services-grid {
     grid-template-columns: repeat(6, 1fr);
@@ -681,7 +643,7 @@ p {
     height: 220px;
   }
 
-  /* ---------------- Vision ---------------- */
+  /* Vision  */
   .vision-section {
     min-height: 300px;
   }
@@ -692,7 +654,7 @@ p {
     padding: 2.5rem 1rem;
   }
 
-  /* ---------------- Team: image / text side by side ---------------- */
+  /* Team: image / text side by side*/
   .team-member {
     flex-direction: row;
   }
@@ -716,7 +678,7 @@ p {
     order: 2;
   }
 
-  /* ---------------- Contact: CSS Grid areas ----------------
+  /*  Contact: CSS Grid areas
      form    | location
      hours   | hours  (full-width on row 2)
   */
@@ -731,7 +693,7 @@ p {
     height: 360px;
   }
 
-  /* ---------------- Footer: copyright + credit stacked on two lines, left-aligned ---------------- */
+  /* Footer: copyright + credit stacked on two lines, left-aligned  */
   .footer-inner {
     flex-direction: column;
     align-items: flex-start;
@@ -739,7 +701,7 @@ p {
     padding: 0 1.5rem;
   }
 
-  /* ---------------- Section padding bump ---------------- */
+  /*  Section padding bump */
   .services-section,
   .team-section,
   .contact-section {
